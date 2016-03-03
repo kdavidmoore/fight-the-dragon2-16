@@ -1,299 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Fight the Dragon!</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div id="the-fight">
+	<div id="wrapper">
+		<div id="the-dragon">
+			<img src="dragon.png" name="dragon"> 
+		</div>
+		
+		<div id="fleeing-peon">
+			<img src="fleeing.png" name="run-away">
+		</div>
 
-		<img src="d1.gif" name="myDie1">
-		<img src="d1.gif" name="myDie2">
-
+		<div id="die-outer">
+			<div id="die-inner">
+				<img src="d1.gif" name="myDie1">
+				<img src="d1.gif" name="myDie2">
+			</div>
+			<input type="button" onclick="throwDice();" value="Fight the dragon!">
+		</div>
 	</div>
 
-	<input type="button" onclick="throwDice();" value="Fight the dragon!!">
-
 <script type="text/javascript">
-	
-// A property has no ()
-// A method/function has ()
-
-// Printing stuff out
-// alert("Hello, World");
-// console.log('Hello, World');
-// console.dir('Hello, World');
-// document.write("Hello, World");
-// console.dir(document);
-// Object that is a person
-// - names
-// - ages
-// - genders
-// - height
-// - weight
-// - sleep()
-// - drive()
-
-// Object that is a car
-// - color
-// - make
-// - model
-// - payment ammount
-// - mpg
-// - year
-// - # of wheels
-// - options
-// - popularity
-// - drive()
-// - park()
-// - run()
-// - crash()
-
-// tesla = new car;
-// tesla.color .... black
-// tesla.drive() ... the tesla starts driving
-
-
-// String - letters and numbers, they are meant for the print/User
-// var fullName = "Robert Bunch";
-// document.write(fullName);
-// fullName = "Robert \"the man\" Bunch";
-// document.write(fullName);
-// var name = "Joe O'Malley";
-// var name = 'Joe O\'Malley';
-
-// INTEGER - number with NO decimal points.
-var myAge = 37;
-var myAgeAsAString = "37";
-
-// var onMyBirthday = myAge + 1;
-// console.log(onMyBirthday);
-// var onMyBirthday = 1 + myAgeAsAString; //The plus is a concatenate sign
-// console.log(onMyBirthday);
-
-// var object = {};
-// console.log ("1" + object);
-
-// var doubleMyAge = myAge + myAge;
-// doubleMyAge = myAge * 2;
-// console.log(doubleMyAge);
-
-// Force a string to be a number
-// var makeMeANumber = Number('adsfsdfdsfksajdhkfj') + 1;
-// console.log(makeMeANumber);
-
-// FLOAT - is a number WITH a decimal point
-// var floatNumber = 12.7;
-// console.log(typeof(12));
-// var makeMeAnInteger = parseInt(floatNumber);
-// console.log(makeMeAnInteger);
-// var makeMeAFLoat = parseFloat(12);
-// console.log(makeMeAFLoat);
-
-// BOOLEANS - TRUE or FALSE. 1 or 0
-// var theTruth = true;
-// theTruth = 1;
-// console.log(typeof(theTruth));
-
-// var theLie = false;
-// theLie = 0;
-// console.log(typeof(theLie));
-
-// var myAge = 37;
-// myAge++;
-// console.log(myAge);
-
-var fortyTwo = 6 * 7; //will print 42
-fortyTwo = 84 / 2 //will print 42
-// var numberTwo = 9 % 3; //modulus
-// console.log(numberTwo);
-// var x = 97
-// var amIEven = x % 2;
-// console.log(amIEven);
-
-//Postfix
-// var num = 23;
-// var newNum = num++;
-// console.log(newNum);
-
-//Prefix
-// var newNum = num;
-// num++;
-// console.log(num);
-
-// var newNumer = ++num);
-
-// var salesTotal = 3 * 12 + 4;//40
-// console.log(salesTotal);
-// salesTotal = 3 * (12 + 4);
-// console.log(salesTotal);
-
-// salesTotal = (3 * (12 + 4) * 3);
-
-// concatenate
-// var firstName = "Robert";
-// var lastName = "Bunch";
-// var fullName = firstName + lastName; // RobertBunch
-// fullName = firstName + ' ' + lastName; // RobertBunch
-// fullname = firstName + ' \'The Man\' ' + lastName; // Robet 'The Man' Bunch
-// var properName = firstName + lastName;
-// var middleName = ' "the man" ';
-// var wholeName = properName + middleName;
-
-// var concatNum = "2" + "2"; //22
-
-// // string + number + number = string
-// var theMeaningOfLife = "The meaning of life is " + 40 + 2;
-// theMeaningOfLife = "The meaning of life is " + (40 + 2);
-// console.log(theMeaningOfLife);
-
-//prompts
-// var name = prompt("What is your name?", "Joe");
-// console.log(name);
-
-// JS prompts are limited to the scope of the page.
-// HTML inputs/forms can be accessed within the page as well as sent to other pages.
-
-
-//Conditionals
-// var numberOfJakes = 1;
-// var question = "What is your name?";
-// var defaultAnswer = "Jake";
-// var name = prompt(question, defaultAnswer);
-// if(name === "Jake"){
-// 	alert("That's 1 too many Jakes!!");
-// 	numberOfJakes++;
-// 	alert(numberOfJakes + " is just too many!");
-// }else{
-// 	alert("Nice to meet you " + name);
-// 	alert(numberOfJakes + ' is a better number.');
-// }
-// var answer = prompt("WHat is 2 + 2?");
-// answer = Number(answer);
-// console.log(answer);
-// console.log(typeof(answer));
-
-// if(typeof(answer) === "number"){
-// 	if((answer === 4)){
-// 		alert ("Correct.");
-// 	}else{
-// 		alert("You are wrong. The answer is 4.");
-// 	}
-// }else{
-// 	alert("You must enter a number!");
-// }
-
-
-
-// if((answer === 4) && (typeof(answer) === "number")){
-
-// }else if((answer === 4) && (typeof(answer) === "number")){
-
-
-// var lotteryWinner = 3;
-// var yourLotteryTicket = 2343524543453253245;
-// if(yourLotteryTicket !== lotteryWinner){
-// 	alert("Tough Luck. No one ever wins.");
-// }
-
-// Random
-// var randomNumber = Math.random();
-// var betweenOneAndOneHundred = Math.round(randomNumber * 100);
-// console.log(betweenOneAndOneHundred);
-
-// Make a prompt box that asks the user for a number between 1-10.
-// Generate a random number between 1-10.
-// If they match, congrat the user.
-// If they dont, console the user and tell them what it was
-// - if they are wrong, but within 2 of the number, tell them they were close and what the number was.
-// - if they are wrong but not within 2, tell them they weren't close and what the nunmber was
-
-// var correctNumber = Math.floor((Math.random() *10 ) +1);
-// var userInput = prompt("Please guess a number between 1 and 10.");
-// var safeUserInput = Number(userInput);
-// if(isNaN(safeUserInput)){
-// 	alert("You must enter a number.");
-// }else if((safeUserInput < 1)|| (safeUserInput > 10)){
-// 	alert("Your number must be between 1-10");
-// }else if(safeUserInput === correctNumber){
-// 	alert("That's the correct number!");
-// }else if(Math.abs(safeUserInput - correctNumber) <= 2) {
-// 	alert("TYou were close! The number was "+ correctNumber);
-// }else{
-// 	alert("You were not even close. The number was "+correctNumber);
-// }
-
-// Array - is a single variable, with multiple variables inside it. In JS, it must be organized by number.
-
-var nfcSouthTeamOne = "Falcons";
-var nfcSouthTeamTwo = "Saints";
-var nfcSouthTeamThree = "Panthers";
-var nfcSouthTeamFour = "Bucs";
-var nfcIsStupid = "Bugs Bunny";
-
-// alert(nfcSouthTeamOne + " is the best team in the NFL!! " + nfcSouthTeamFour + " is the worst!");
-
-var teams = [
-	"Falcons",
-	"Saints",
-	"Panthers",
-	"Bucs"
-];
-
-// teams[9] = "The Ninjas";
-
-// teams.pop(); //Will remove the last item in the array.
-// teams.push("The Cowboys"); //Puts an element on the end of the array
-// teams.unshift("The Patriots"); // WIll put an elment on the front of the array
-// teams.shift(); // Remove the first
-// console.dir((teams));
-// console.log(teams[0]);
-// console.log(teams[teams.length-1]);
-
-var atlTeams = [
-"Braves",
-"Falcons",
-"Hawks",
-"Thrashers"
-];
-// console.log(atlTeams);
-atlTeams.splice(2,0,"Atlanta United"); // This will start at element 3. It will add whatever we give it. Will remove X starting with 3
-// console.log(atlTeams);
-
-var twoTeams = atlTeams.slice(0,2) //Will start copying at the first number, and it will stop copying at the 2nd number
-
-// 99 bottles of beer on the wall. 99 bottles of beer...
-// 98 bottles of beer on the wall. 98 bottles of beer...
-
-// for(var i=99; i>=0; i--){
-// 	console.log(i + " bottles of beer on the wall. " + i + " bottles of beer. Take one down, pass it arround, " + i-1 + " bottles of beer on the wall!<br />");
-// }
-
-// YOU DONT HAVE TO.
-
-// for(var i = 0; i < atlTeams.length; i++){
-	// console.log(atlTeams[i]);
-// }
-
-// Strings are just arrays of characters!!! If you need to manipulate a string for any reason, you can use slice, length, indexof, shift...
-
-// var myName = "roB tHE ManIAC";
-// var firstChar = myName.slice(0,1);
-// var otherChars = myName.slice(1);
-// console.log(otherChars);
-// var properCaseName = firstChar.toUpperCase() + otherChars.toLowerCase();
-// console.log(properCaseName);
-// document.write(properCaseName[5]);
-// document.write("There are " + properCaseName.length + "letters in your name.");
-
-// for(i=0; i<properCaseName.length;i++){
-// 	document.write(properCaseName[i]);
-// }
-// for(i=properCaseName.length-1; i>=0; i--){
-// 	document.write(properCaseName[i]);
-// }
-
-
-// Dice roller.
+// dice roller
 function throwDice(){
 	var randomDie = Math.round(Math.random()*5)+1; //This will produce a number between 1 - 6.
 	var imageName = "d" + randomDie + ".gif";
@@ -310,17 +41,3 @@ console.dir(document.images);
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
