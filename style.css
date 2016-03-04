@@ -1,5 +1,7 @@
 body {
 	max-width: 960px;
+	margin: auto;
+	font-family: Cursive, serif;
 }
 
 #outer-wrapper {
@@ -8,7 +10,6 @@ body {
 
 #upper-console {
 	height: 60vh;
-	width: 80vw;
 }
 
 #img-wrapper {
@@ -18,7 +19,11 @@ body {
 #lower-console {
 	margin: auto;
 	height: 40vh;
-	width: 80vw;
+	width: 80%;
+}
+
+#dragon img {
+	width: 65%;	
 }
 
 #fleeing-peon {
@@ -28,10 +33,15 @@ body {
 input[type="button"] {
 	border: none;
 	background-color: #990000;
-	font-size: 14px;
+	font-size: 16px;
 	color: #fff;
 	border-radius: 5px;
+	font-family: sans-serif;
 }
+
+input[type="button"]:hover {
+	cursor: pointer;
+} 
 
 #roll-button {
 	display: none;
@@ -40,16 +50,25 @@ input[type="button"] {
 #dice-wrapper {
 	float: right;
 	border: 2px solid grey;
+	border-radius: 5px;
 	padding: 10px;
+	background-color: #f0f0f0;
 }
 
 #button-wrapper {
-	margin: auto;
 	border: 2px solid grey;
+	border-radius: 5px;
 	padding: 10px;
+	background-color: #f0f0f0;
 }
 
 h1 {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#message {
 	font-size: 18px;
 	font-weight: bold;
 	text-align: center;
