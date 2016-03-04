@@ -1,7 +1,56 @@
+body {
+	max-width: 960px;
+}
+
+#outer-wrapper {
+	overflow: hidden;
+}
+
+#upper-console {
+	height: 60vh;
+	width: 80vw;
+}
+
+#img-wrapper {
+	float: left;
+}
+
+#lower-console {
+	margin: auto;
+	height: 40vh;
+	width: 80vw;
+}
+
 #fleeing-peon {
 	display: none;
 }
 
+input[type="button"] {
+	border: none;
+	background-color: #990000;
+	font-size: 14px;
+	color: #fff;
+	border-radius: 5px;
+}
+
 #roll-button {
 	display: none;
+}
+
+#dice-wrapper {
+	float: right;
+	border: 2px solid grey;
+	padding: 10px;
+}
+
+#button-wrapper {
+	margin: auto;
+	border: 2px solid grey;
+	padding: 10px;
+}
+
+h1 {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
 }
