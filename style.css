@@ -1,3 +1,7 @@
-#fleeing {
+#fleeing-peon {
+	display: none;
+}
+
+#roll-button {
 	display: none;
 }
