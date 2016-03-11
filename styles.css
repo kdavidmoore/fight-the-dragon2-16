@@ -1,0 +1,41 @@
+#card-wrapper{
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+    border: solid 3px black;	
+}
+
+#dragon-title{
+    text-align: center;
+    border: 5px solid brown;
+    box-shadow: 3px 3px;
+    background-color: red;
+    font-size: 30px;
+    color: white;	
+}
+
+#dragon-name{
+    text-align: center;
+    border: 5px solid brown;
+    box-shadow: 3px 3px;
+    background-color: red;
+    font-size: 30px;
+    color: white;	
+}
+
+#dragon-img{
+    border: 1px solid black;	
+}
+img{
+	width: 100%;
+}
+
+#dragon-power{
+    position: absolute;
+    bottom: -7px;
+    right: -7px;
+    border: 2px solid blue;
+    background: blue;
+    color: white;
+    font-size: 20px;	
+}
